@@ -1,4 +1,4 @@
-#使用youtube取得影片網址
+# 使用youtube取得影片網址
 
 目前使用python取得youtube影片的網址,<br>
 但在取得影片時會出現"存取 r6---sn-ipoxu-un5s.googlevideo.com 的要求遭到拒絕",<br>
