@@ -10,7 +10,7 @@ youtube_adr = input("please input youtube address:")
 s = requests.Session()
 res = s.get(youtube_adr)
 res.encoding = 'utf-8'
-print (res.text)
+# print (res.text)
 m = re.findall("ytplayer.config = ({.*?});",res.text)
 jd = json.loads(m[0])
 url_address = unquote(jd['args']['url_encoded_fmt_stream_map'])
@@ -30,7 +30,7 @@ while(line != -1):
     if(url.find("http") != -1):
         urls.append(url)
     line1 = line
-    print (line)
+    #print (line)
 for u in urls:
     print(u)
 req = s.get(urls[1],stream = True)
